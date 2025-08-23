@@ -29,7 +29,7 @@ function App() {
     try {
       setLoading(true);
       const data = await fetchRandomCatImage(4); // Busca 4 gatos aleatórios
-      setCats(data); // Atualiza o State com os novos gatos
+      setCats(data.slice(0, 4)); // Atualiza o State com os novos gatos
       setLoading(false);
       // console.log(data); // Mostra no console os gatos buscados
     } catch (error) {
