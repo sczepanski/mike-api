@@ -107,7 +107,7 @@ function App() {
   return (
     <>
       <h1 className="p-4 text-5xl font-semibold">Gerador de Gatos! 🐱</h1>
-      <div className="flex justify-center">
+      <div className="flex flex-col md:flex-row items-center md:items-start justify-center">
         <div className="grid grid-cols-2 gap-4 p-4">
           {loading // Se estiver carregando, mostra os placeholders
             ? [...Array(4)].map((_, index) => (
