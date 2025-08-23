@@ -13,7 +13,7 @@ const CatCard = ({ cat, onError, onClick }) => {
         onError={() => onError(cat.id)}
       />
       {cat.breeds && cat.breeds[0] && (
-        <h2 className="mt-2 text-lg font-semibold text-white absolute bottom-4 md:left-4 bg-gray-800/20 border px-8 py-2 rounded-md shadow-md">
+        <h2 className="mt-2 text-sm md:text-lg font-semibold text-white absolute bottom-4 md:left-4 bg-gray-800/20 border px-8 py-2 rounded-md shadow-md">
           {cat.breeds[0].name}
         </h2>
       )}
